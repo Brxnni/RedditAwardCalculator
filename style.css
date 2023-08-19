@@ -1,0 +1,92 @@
+:root {
+	--upvote-color: #ff4500;
+	--upvote-color-darker: #ef3900;
+	--downvote-color: #7193ff;
+	--neutral-color: #ededed;
+	--neutral-color-darker-1: #30323f;
+	--neutral-color-darker: #20222f;
+	--neutral-color-darker-2: #10121f;
+}
+
+body {
+	background-color: var(--neutral-color-darker);
+	color: var(--neutral-color);
+	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-top: 20vh;
+	text-align: center;
+	padding-bottom: 30vh;
+}
+
+body * {
+	background-color: inherit;
+	color: inherit;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border-spacing: 50px 0;
+}
+
+h1 {
+	margin-top: 10vh;
+}
+
+table.results td {
+	height: 35px;
+	font-size: 20px;
+}
+
+tr:hover * {
+	background-color: var(--neutral-color-darker-1);
+}
+
+td {
+	text-align: left;
+	padding: 10px 10px;
+	height: 10px;
+	border-bottom: 1px solid var(--neutral-color);
+}
+
+td:nth-child(3) {
+	margin: 20px;
+}
+
+button {
+	text-align: center;
+	background-color: var(--upvote-color);
+	width: 20vw;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	margin-bottom: 1vh;
+}
+
+button:hover {
+	background-color: var(--upvote-color-darker);
+	cursor: pointer;
+}
+
+input {
+	text-align: center;
+	background-color: var(--neutral-color-darker-2);
+	width: 30vw;
+	height: 30px;
+	padding: 5px 10px 5px 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+input:focus-within {
+	outline: 1px solid var(--downvote-color);
+}
+
+img {
+	width: 35px;
+	height: 35px;
+}
